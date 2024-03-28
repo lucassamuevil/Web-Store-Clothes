@@ -1,0 +1,78 @@
+/* Adicione essas modificações ao seu arquivo ListProduct.css */
+
+.list-product {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px;
+    border-radius: 6px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-right: 30px;
+    
+  }
+  
+  .listproduct-format-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 100px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    margin-left:20px;
+  }
+  
+  .listproduct-format {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .listproduct-remove-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right:30px;
+  }
+  
+  .listproduct-allproducts {
+    overflow-y: auto;
+  }
+  
+  .listproduct-product-icons {
+    display: flex;
+    gap: 5px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  .listproduct-product-icon img {
+    max-height: 30px; 
+    max-width: 130px;
+  }
+  
+  @media (max-width: 800px) {
+    .list-product {
+      box-sizing: border-box;
+      width: 95%;
+      height: 100%;
+      padding: 10px 30px;
+      margin: 20px auto;
+    }
+    .listproduct-format-main {
+      padding: 15px 0px;
+      color: #454545;
+      padding: 12px;
+    }
+    .listproduct-remove-icon {
+      margin-left: 0;
+    }
+  }
+  
